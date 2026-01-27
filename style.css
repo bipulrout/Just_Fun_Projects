@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: relative; */
+}
+
+.star {
+    width: 2px;
+    height: 2px;
+    background-color: gold;
+    position: absolute;
+    border-radius: 50%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    opacity: 0;
+
+    animation: fade 2s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
