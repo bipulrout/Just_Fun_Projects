@@ -20,16 +20,17 @@ body {
     background-color: gold;
     position: absolute;
     border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    opacity: 0;
+    opacity: 0.5;
 
-    animation: fade 2s ease forwards;
+    animation: fade 3s cubic-bezier(0.42, 0, 0.49, 0.72) forwards;
     animation-iteration-count: infinite;
 }
 
 @keyframes fade {
     0% {
-        opacity: 0;
+        opacity: 0.5;
         transform: scale(0.5);
     }
     50% {
@@ -37,7 +38,7 @@ body {
         transform: scale(1.2);
     }
     100% {
-        opacity: 0;
+        opacity: 0.5;
         transform: scale(1);
     }
 }

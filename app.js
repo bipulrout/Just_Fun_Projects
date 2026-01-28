@@ -43,7 +43,7 @@ function createStar(e) {
 /* ========When page load ========== */
 
 window.addEventListener('load', () => {
-    createRandomlyStar(100)
+    createRandomlyStar(50)
 })
 
 
@@ -57,10 +57,7 @@ function createRandomlyStar(count){
         body.appendChild(div)
 
 
-
-
-
-        // ==========
+        // ========== Random Color ========
 
          function randomColor(){
         const hex = "0123456789ABCDEF";
